@@ -1,0 +1,58 @@
+/*menu*/
+.cabecalhoPrincipal .container{
+    display: flex; /*falando que o dispaly virou um flexbox*/
+    align-items: center; /*alinhando os itens verticalmente*/
+    justify-content: space-between; /*adicionando espaço entre os itens*/
+}
+
+.cabecalhoPrincipal-nav{
+    display: flex; /*o menu ficou alinhando um do lado do outro*/
+}
+
+/*--------------------------- conteúdo principal-----------------------------------------------------------*/ 
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 20%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n)/*tirando a margin do 4 elemento*/ {
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n+1){
+    margin-right: 0;
+}
+
+/*------------------------rodapé-----------------------------------------------------------------*/
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /*espaço em volta dos elementos*/
+    width: 70%; /*aumentando o tamanho do elemento*/
+    margin-right: 5% ;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{ /*alinhou o tamanho do input com o botao*/
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction:column ; /*direção do flex, 'row' é o padrão, column é vertical*/
+    flex-wrap: wrap; /*quebrar para proxima coluna, quando não couber no 'pai'*/
+    /* shorthard - flex-flow: column wrap;*/
+    height: 253px; /*tamanho do pai*/
+}
